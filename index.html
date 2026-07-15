@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Portfolio of Binoy Daniel, a signal processing and machine learning engineer working in biosignals, neurotechnology, wearable sensing, and digital health."
+  >
+  <title>Binoy Daniel | Signal Processing & ML Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#top">Binoy Daniel</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Signal Processing · Machine Learning · Neurotechnology</p>
+        <h1>Building reliable systems from complex physiological signals.</h1>
+        <p class="hero-copy">
+          I am an electrical engineer developing algorithms and scientific software
+          for EEG, ECG, wearable sensors, digital health, and neurotechnology.
+          My work connects signal processing research with practical data pipelines
+          and device-facing applications.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">View projects</a>
+          <a class="button secondary" href="mailto:bdaniel917@gmail.com">Email me</a>
+          <a
+            class="button secondary"
+            href="https://github.com/bdaniel917"
+            target="_blank"
+            rel="noreferrer"
+          >GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects</h2>
+        <p class="section-intro">
+          Projects spanning physiological signal quality, wearable-data
+          infrastructure, computational cardiac mapping, and EEG decoding.
+        </p>
+
+        <div class="project-grid">
+          <a class="project-card" href="projects/physioqc.html">
+            <div>
+              <span class="project-number">01</span>
+              <h3>PhysioQC</h3>
+              <p>
+                A headless toolkit for real-time physiological signal quality
+                monitoring, automatic event detection, and annotation.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">EEG / ECG / IMU</span>
+                <span class="tag">CLI</span>
+                <span class="tag">Parquet</span>
+              </div>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="project-card" href="projects/wearable-pipeline.html">
+            <div>
+              <span class="project-number">02</span>
+              <h3>Digital Health Wearable Pipeline</h3>
+              <p>
+                Scalable processing infrastructure for multimodal wearable data,
+                quality control, feature generation, and downstream analytics.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Databricks</span>
+                <span class="tag">AWS</span>
+                <span class="tag">ETL</span>
+              </div>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="project-card" href="projects/cardiac-mapping.html">
+            <div>
+              <span class="project-number">03</span>
+              <h3>3D Computational Mapping of the Heart</h3>
+              <p>
+                Signal processing and computational geometry tools for converting
+                ECG measurements into spatial maps of cardiac electrical activity.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">WFDB</span>
+                <span class="tag">ECG</span>
+                <span class="tag">Interpolation</span>
+              </div>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="project-card" href="projects/eeg-motor-imagery.html">
+            <div>
+              <span class="project-number">04</span>
+              <h3>EEG Motor Imagery Classification</h3>
+              <p>
+                An end-to-end BCI decoding workflow for classifying left- and
+                right-hand motor imagery using CSP features and LDA.
+              </p>
+              <div class="tags">
+                <span class="tag">MNE</span>
+                <span class="tag">CSP</span>
+                <span class="tag">LDA</span>
+                <span class="tag">BCI</span>
+              </div>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Engineering for physiological data.</h2>
+        </div>
+        <div class="section-intro">
+          <p>
+            My background combines electrical engineering, digital signal
+            processing, machine learning, and scientific computing. I have worked
+            with EEG, EMG, PSG, ECG, inertial sensors, and audio across
+            pharmaceutical research, digital health, startups, and academic labs.
+          </p>
+          <p>
+            I am especially interested in systems that sit close to the data:
+            acquisition, signal quality, preprocessing, algorithm development,
+            validation, and the infrastructure required to make analysis
+            reproducible and usable by collaborators.
+          </p>
+          <p>
+            I am based in San Francisco and interested in neurotechnology, brain-
+            computer interfaces, wearable sensing, medical devices, and applied
+            research engineering.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Technical toolkit</h2>
+        <div class="skills-list">
+          <div>
+            <h3>Programming</h3>
+            <p>Python, MATLAB, R, C, C++, SQL</p>
+          </div>
+          <div>
+            <h3>Scientific computing</h3>
+            <p>NumPy, Pandas, SciPy, MNE, scikit-learn, PyTorch, TensorFlow</p>
+          </div>
+          <div>
+            <h3>Signal processing</h3>
+            <p>
+              Filtering, spectral analysis, adaptive filtering, time-frequency
+              methods, sensor fusion, feature engineering
+            </p>
+          </div>
+          <div>
+            <h3>Data systems</h3>
+            <p>Databricks, Spark, AWS, ETL, Parquet, JSONL, reproducible pipelines</p>
+          </div>
+          <div>
+            <h3>Physiological modalities</h3>
+            <p>EEG, EMG, PSG, ECG, PPG, SpO₂, IMU, audio</p>
+          </div>
+          <div>
+            <h3>Application areas</h3>
+            <p>Neurotechnology, digital health, wearable sensing, clinical research</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something useful from difficult data.</h2>
+          <p>
+            I am open to conversations about signal processing, neurotechnology,
+            digital health, medical devices, and scientific software roles.
+          </p>
+          <div class="hero-actions">
+            <a class="button secondary" href="mailto:bdaniel917@gmail.com">
+              bdaniel917@gmail.com
+            </a>
+            <a
+              class="button secondary"
+              href="https://github.com/bdaniel917"
+              target="_blank"
+              rel="noreferrer"
+            >GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 Binoy Daniel</span>
+      <span>San Francisco, California</span>
+    </div>
+  </footer>
+</body>
+</html>
