@@ -1,0 +1,50 @@
+{
+  "project": "neural-recording-chain-simulator",
+  "model_status": "illustrative; not device-specific",
+  "seed": 7,
+  "trials": 200,
+  "units_note": "Synthetic source and noise are in arbitrary microvolts; ADC full scale is an illustrative volts value.",
+  "output_snr_db": {
+    "median": 17.210277125488794,
+    "p05": 6.218136509834657,
+    "p95": 22.712898468012902
+  },
+  "saturation_fraction": {
+    "median": 0.00475,
+    "p95": 0.589575
+  },
+  "parameter_sensitivity_spearman": [
+    {
+      "parameter": "adc_full_scale_v",
+      "spearman_rho": 0.5705857646441163
+    },
+    {
+      "parameter": "gain",
+      "spearman_rho": -0.5387024675616892
+    },
+    {
+      "parameter": "amplifier_current_noise_pa_sqrt_hz",
+      "spearman_rho": -0.252340808520213
+    },
+    {
+      "parameter": "analog_cutoff_hz",
+      "spearman_rho": -0.23386484662116555
+    },
+    {
+      "parameter": "electrode_resistance_ohm",
+      "spearman_rho": -0.20813920348008705
+    },
+    {
+      "parameter": "amplifier_noise_uv",
+      "spearman_rho": -0.20093152328808225
+    },
+    {
+      "parameter": "adc_bits",
+      "spearman_rho": 0.056860421510537766
+    },
+    {
+      "parameter": "input_capacitance_pf",
+      "spearman_rho": 0.02478061951548789
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "input_sample_rows": 4,
+  "valid_sample_rows": 4,
+  "bad_sample_rows": 0,
+  "channel_count": 4,
+  "duplicate_timestamps": 0,
+  "out_of_order_timestamps": 0,
+  "first_timestamp_epoch_s": 1790845200.0,
+  "last_timestamp_epoch_s": 1790845200.012,
+  "normalized_path": "/tmp/portfolio-project-demos/wearable-lake/normalized/tenant=demo-site/study=sleep-wearables-01/participant=participant-014/session=session-2026-10-01/stream=multimodal-vitals/event=event-0001.csv",
+  "job_id": 1,
+  "payload_sha256": "365004fe264c872f10b2548ab5b583679080c33ac698e9a13a36f00b643c4b57",
+  "pipeline_version": "0.1.0"
+}

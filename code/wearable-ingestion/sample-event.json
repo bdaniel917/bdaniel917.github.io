@@ -1,0 +1,10 @@
+{
+  "tenant_id": "demo-site",
+  "study_id": "sleep-wearables-01",
+  "participant_id": "participant-014",
+  "session_id": "session-2026-10-01",
+  "device_id": "wearable-a",
+  "stream": "multimodal-vitals",
+  "provider": "demo-adapter",
+  "event_id": "event-0001"
+}
