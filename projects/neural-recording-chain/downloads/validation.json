@@ -1,0 +1,107 @@
+{
+  "created_utc": "2026-10-25T09:53:52.571536+00:00",
+  "tests_run": 14,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "baseline": {
+    "fs": 2000.0,
+    "internal_fs": 80000.0,
+    "duration": 6.0,
+    "amp": 0.3,
+    "noise_density": 0.0002,
+    "line_amp": 0.12,
+    "line_hz": 60.0,
+    "line_drift": 0.0,
+    "line_step": 1.0,
+    "harmonic_amp": 0.0,
+    "oob_amp": 0.1,
+    "oob_hz": 1350.0,
+    "analog_fc": 650.0,
+    "gain": 1.0,
+    "notch_hz": 60.0,
+    "notch_q": 25.0,
+    "adc_bits": 16,
+    "state_bits": 16,
+    "frac_bits": 15,
+    "coeff_frac": 28,
+    "acc_bits": 62,
+    "seed": 7,
+    "rounding": "nearest",
+    "overflow": "saturate",
+    "realization": "df1",
+    "artifact_amp": 0.0,
+    "artifact_start": 1.0,
+    "artifact_duration": 0.02
+  },
+  "test_ids": [
+    "test_adc_and_rounding_boundaries",
+    "test_alias_edges_and_timestamps",
+    "test_analog_transfer_and_internal_rate_convergence",
+    "test_fixed_bit_accurate_reference",
+    "test_float_independent_reference_and_block_state",
+    "test_impulse_and_zero_input_limit_cycles",
+    "test_invalid_inputs_and_frac_default",
+    "test_metrics_closure_clipping_and_reference",
+    "test_noise_density_and_common_realization",
+    "test_notch_response_and_decay",
+    "test_pole_quantization_is_reported",
+    "test_psd_normalization_and_bandpower",
+    "test_quantization_uniform_rms",
+    "test_saturation_recovery"
+  ],
+  "evidence": {
+    "analog_measured_gain_40000": [
+      0.9799570677840133,
+      0.9266212100912524
+    ],
+    "analog_measured_gain_80000": [
+      0.9799440058389113,
+      0.9265733874257933
+    ],
+    "analog_measured_gain_160000": [
+      0.979940738789399,
+      0.9265614263794276
+    ],
+    "analog_max_gain_error": 6.377120566525285e-05,
+    "float_reference_max_error": 5.35682609381638e-15,
+    "zero_input_tail_rms_8_fs": 0.0,
+    "zero_input_tail_rms_16_fs": 0.0004696029611497616,
+    "zero_input_tail_rms_17_fs": 0.00023476875528416252,
+    "component_reconstruction_max_fs": 1.1872447469585268e-14,
+    "clean_path_bias_with_high_snr_pct": -6.88771847439208,
+    "noise_rms_by_fs_500_1000_2000_4000": [
+      0.004562077445996968,
+      0.004509096116595957,
+      0.004518057258255928,
+      0.0045328469122162185
+    ],
+    "analog_noise_rms_theory": 0.004518888386354952,
+    "noise_rms_internal_rate_convergence": [
+      0.0045241788272011784,
+      0.004518057258255928,
+      0.004523385851448607
+    ],
+    "matched_notch_residual_peak_fs": 5.223674908253036e-06,
+    "uniform_quantization_rms_to_ideal": [
+      0.9998890604479957,
+      0.9989607370585277,
+      1.000330353480339
+    ],
+    "float_notch_artifact_recovery_to_1mFS_s": 0.4739874999999998,
+    "float_notch_artifact_tail_max_fs": 3.802513859341161e-15,
+    "fixed_notch_artifact_recovery_to_1mFS_s": 2.3244874999999996,
+    "fixed_notch_artifact_tail_max_fs": 0.0,
+    "artifact_adc_clip_count": 41
+  },
+  "source_sha256": {
+    "dsp.h": "b4af546d2a379c5c391d694777007b46d4f22b47e89e69ac6cf45d58986fbc29",
+    "chain_sim.c": "137d8ad16608f855fd3d477d7f1b500906eaa1cbdc58a5336e34796832ad46fb",
+    "analysis.py": "f12ac8334fff1781cf77336fad23f379bc1ffe2cff7f90a0202b64be98e7825c",
+    "validate.py": "99c440ecbf7787a9cb8a647eaf6fa812d36d1324fe37cb34d846fae521fe926f",
+    "tests/probe.c": "d11b6411ac86263fce99b1350bc5d877d832bea2f4fb3fc7f7b6fd50a8aa8bc0",
+    "build.py": "65ecb50d1ca1eb97eb2cf67b7ab24e2f30f65a67d578e5d623ecb44d10387991",
+    "sweep.py": "ef01bc383fb87f94403f5f37a923db2732b777331b9a079ac4864a03e4478b6a"
+  },
+  "failure_details": []
+}

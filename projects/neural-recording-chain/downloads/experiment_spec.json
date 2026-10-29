@@ -1,0 +1,9 @@
+{
+  "description": "Illustrative baseline screening thresholds for discussing tradeoffs; not Precision Neuroscience requirements or validated neural decoding thresholds.",
+  "minimum_fixed_output_snr_db": 18.0,
+  "maximum_snr_degradation_vs_float_db": 0.1,
+  "maximum_float_fixed_rmse_fs": 0.001,
+  "maximum_absolute_fixed_bandpower_bias_pct": 10.0,
+  "require_stable_quantized_poles": true,
+  "require_no_fixed_input_state_or_accumulator_events": true
+}
