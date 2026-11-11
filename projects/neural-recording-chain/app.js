@@ -284,7 +284,7 @@ async function init() {
     $('#close-tour').addEventListener('click', closeTour);
     $('#tour-prev').addEventListener('click', () => { if (tourStep > 0) { tourStep--; renderTour(); } });
     $('#tour-next').addEventListener('click', () => { if (tourStep === tours.length - 1) { closeTour(); $('#evidence').scrollIntoView({ behavior: 'smooth' }); } else { tourStep++; renderTour(); } });
-    $('#print').addEventListener('click', printReport); $('#print-bottom').addEventListener('click', printReport);
+    $('#print')?.addEventListener('click', printReport); $('#print-bottom').addEventListener('click', printReport);
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeTour(); });
     renderAllCharts(); renderAlias(); renderArithmetic(); renderEvidence();
     let resizeTimer; window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(renderAllCharts, 120); });
